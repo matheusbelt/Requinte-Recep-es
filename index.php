@@ -30,7 +30,7 @@
 					</ul>
 				</div>
 			</div>
-			</div>
+			</div> <!-- fim da navbar -->
 		</nav>
 	</div><!--  fim do menu-background container-fluid -->
 	<section class="eventos container-fluid" id="eventos">
