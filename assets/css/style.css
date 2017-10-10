@@ -52,23 +52,8 @@ a {
 
 .eventos {
   background: #fffaf0; }
-  .eventos .eventos-subtitulo {
-    font-weight: bold;
-    font-family: sans-serif;
-    font-size: 18pt; }
-  .eventos .eventos-corpo-texto {
-    margin: 10px 0;
-    font-size: 14pt;
-    font-family: "Raleway", sans-serif;
-    line-height: 22px; }
-  .eventos .decoracao-laranja {
-    display: block;
-    width: 150px;
-    height: 4px;
-    margin: 20px 0;
-    margin-left: auto;
-    margin-right: auto;
-    background: #ffe5b6; }
+  .eventos img {
+    max-width: 100%; }
   .eventos .eventos-frase-final {
     font-style: italic;
     font-family: "Raleway", sans-serif;
@@ -78,5 +63,69 @@ a {
       content: '"'; }
     .eventos .eventos-frase-final:after {
       content: '"'; }
+
+.eventos-subtitulo, .trinta-anos-requinte .trinta-anos-cliente-nome, .catalogos .catalogo-item-titulo {
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 18pt; }
+
+.eventos-corpo-texto, .trinta-anos-requinte .trinta-anos-historia, .trinta-anos-requinte .trinta-anos-cliente-depoimento {
+  margin: 10px 0;
+  font-size: 14pt;
+  font-family: "Raleway", sans-serif;
+  line-height: 22px; }
+
+.decoracao-laranja {
+  display: block;
+  width: 175px;
+  height: 3px;
+  margin: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffe5b6; }
+
+.trinta-anos-requinte {
+  background: #682829;
+  color: white;
+  padding-bottom: 40px; }
+  .trinta-anos-requinte .trinta-anos-titulo {
+    color: white;
+    margin-bottom: 30px; }
+  .trinta-anos-requinte .trinta-anos-historia {
+    padding-left: 15px; }
+  .trinta-anos-requinte .decoracao-laranja {
+    display: block;
+    margin: 40px 0 20px 0;
+    margin-left: auto;
+    margin-right: auto; }
+  .trinta-anos-requinte .trinta-anos-cliente-nome {
+    font-size: 16pt;
+    margin-top: 50px; }
+  .trinta-anos-requinte .trinta-anos-cliente-depoimento {
+    margin-top: 20px; }
+
+.catalogos {
+  padding-bottom: 40px;
+  background: #fffaf0; }
+  .catalogos .catalogo-item {
+    background: #682829;
+    padding: 30px; }
+  .catalogos h1 {
+    margin-bottom: 40px; }
+  .catalogos .catalogo-item-titulo {
+    color: white;
+    margin-bottom: 30px;
+    text-transform: uppercase; }
+
+.catalogo-download {
+  background: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 18pt;
+  color: white;
+  border: none;
+  padding: 5px 50px;
+  margin-top: 25px; }
+  .catalogo-download:hover {
+    background: rgba(0, 0, 0, 0.8); }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,9 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 </head>
 <body>
@@ -97,38 +100,51 @@
 		</div> <!-- fim do container -->
 	</section> <!-- fim da section eventos e do container-fluid -->
 
-	<section class="30anos-requinte container-fluid" id="30anos-requinte">
-		<div class="container 30anos-corpo">
-			<h1 class="30anos-titulo titulo-section">30 Anos Requinte Recepções</h1>
-			<p class="30anos-historia">vem aqui um pouco sobre o requinte e sua história</p>
+	<!-- 30 anos requinte / parte de depoimentos -->
+	<section class="trinta-anos-requinte container-fluid" id="trinta-anos-requinte">
+		<div class="container trinta-anos-corpo">
+			<h1 class="trinta-anos-titulo titulo-section">30 Anos Requinte Recepções</h1>
+			<p class="trinta-anos-historia">vem aqui um pouco sobre o requinte e sua história</p>
 			<div class="col-xs-12">
 				<div class="decoracao-laranja"></div>
 			</div>
-			<div class="col-md-4 30anos-depoimento">
-				<h4 class="30anos-cliente-nome">Luquinhas</h4>
-				<p class="30anos-cliente-depoimento">Depoimento do animal que falou aqui</p>
+			<div class="col-md-4 trinta-anos-depoimento">
+				<h4 class="trinta-anos-cliente-nome">Luquinhas</h4>
+				<p class="trinta-anos-cliente-depoimento">Depoimento do animal que falou aqui</p>
 			</div>
-			<div class="col-md-4 30anos-decoracao">
-				<img src="" alt="Decoracao">
+			<div class="col-md-4 trinta-anos-decoracao">
+				<center>
+				<img src="assets/img/emblema.png" alt="Emblema Requinte 30 anos" title="30 anos da Requinte Recepções">
+			</center>
 			</div>
-			<div class="col-md-4 30anos-depoimento">
-				<h4 class="30anos-cliente-nome">Luquinhas</h4>
-				<p class="30anos-cliente-depoimento">Depoimento do animal que falou aqui</p>
+			<div class="col-md-4 trinta-anos-depoimento">
+				<h4 class="trinta-anos-cliente-nome">Luquinhas</h4>
+				<p class="trinta-anos-cliente-depoimento">Depoimento do animal que falou aqui</p>
 			</div>
-		</div> <!-- fim do 30anos corpo -->
+		</div> <!-- fim do trinta-anos corpo -->
 	</section><!--  fim de 30 anos requinte -->
 
 	<section class="catalogos container-fluid" id="catalogos">
 		<div class="container catalogos-corpo">
 			<h1 class="catalogos-titulo titulo-section">Catálogos</h1>
-			<div class="catalogo-item col-md-6">
-				<img src="" alt="" class="catalogo-icone">
-				<a href="" download><button class="catalogo-download">Download</button></a>
-			</div><!--  catalogo-item -->
-			<div class="catalogo-item col-md-6">
-				<img src="" alt="" class="catalogo-icone">
-				<a href="" download><button class="catalogo-download">Download</button></a>
-			</div><!--  catalogo-item -->
+			<div class="col-md-6">
+				<center>
+					<div class="catalogo-item">
+						<h2 class="catalogo-item-titulo">Buffet</h2>
+						<img src="assets/img/icon-buffet.png" alt="" class="catalogo-icone">
+					</div><!--  catalogo-item -->
+					<a href="" download><button class="catalogo-download">Download</button></a>
+				</center>
+			</div> <!-- fim do col-md-6 -->
+			<div class="col-md-6">
+			<center>
+					<div class="catalogo-item">
+						<h2 class="catalogo-item-titulo">Fotos</h2>
+						<img src="assets/img/icon-foto.png" alt="" class="catalogo-icone">
+					</div><!--  catalogo-item -->
+					<a href="" download><button class="catalogo-download">Download</button></a>
+				</center>
+			</div> <!-- fim do col-md-6 -->
 		</div> <!-- fim do catalogo-corpo -->
 	</section>
 

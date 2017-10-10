@@ -11,7 +11,8 @@ $amarelo: #ffe5b6;
 $fonte-titulos: sans-serif;
 $corpo-texto: 'Raleway', sans-serif;
 
-
+	//tamanhos
+$gutter: 40px;
 
 // ESTILO GERAL
 h1{
@@ -82,25 +83,8 @@ a{
 .eventos{
 	background: $creme;
 
-	.eventos-subtitulo{
-		font-weight: bold;
-		font-family: $fonte-titulos;
-		font-size: 18pt;
-	}
-	.eventos-corpo-texto{
-		margin: 10px 0;
-		font-size: 14pt;
-		font-family: $corpo-texto;
-		line-height: 22px;
-	}
-	.decoracao-laranja{
-		display: block;
-		width: 150px;
-		height: 4px;
-		margin: 20px 0;
-		margin-left: auto;
-		margin-right: auto;
-		background: $amarelo;
+	img{
+		max-width: 100%;
 	}
 	.eventos-frase-final{
 		font-style: italic;
@@ -114,4 +98,91 @@ a{
 			content:'"';
 		}
 	}
-} //final de eventos
+
+} 
+.eventos-subtitulo{
+		font-weight: bold;
+		font-family: $fonte-titulos;
+		font-size: 18pt;
+	}
+.eventos-corpo-texto{
+	margin: 10px 0;
+	font-size: 14pt;
+	font-family: $corpo-texto;
+	line-height: 22px;
+}
+.decoracao-laranja{
+	display: block;
+	width: 175px;
+	height: 3px;
+	margin: 20px 0;
+	margin-left: auto;
+	margin-right: auto;
+	background: $amarelo;
+}
+//final de eventos
+
+
+//30 anos
+.trinta-anos-requinte{
+	background: $vinho;
+	color: white;
+	padding-bottom: $gutter;
+	.trinta-anos-titulo{
+		color: white;
+		margin-bottom: 30px;
+	}
+	.trinta-anos-historia{
+		@extend .eventos-corpo-texto;
+		padding-left:15px;
+	}
+	.decoracao-laranja{
+		display: block;
+		margin: 40px 0 20px 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.trinta-anos-cliente-nome{
+		@extend .eventos-subtitulo;
+		font-size: 16pt;
+		margin-top: 50px;
+	}
+	.trinta-anos-cliente-depoimento{
+		@extend .eventos-corpo-texto;
+		margin-top: 20px;
+	}
+	
+} //final de 30 anos
+
+//CATALOGOS
+
+.catalogos{
+	padding-bottom:$gutter;
+	background: $creme;
+	.catalogo-item{
+		background: $vinho;
+		padding:30px;
+	}
+	h1 {
+		margin-bottom: 40px;
+	}
+	.catalogo-item-titulo{
+		@extend .eventos-subtitulo;
+		color: white;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+	}
+}
+.catalogo-download{
+	background: black;
+	font-family: $corpo-texto;
+	font-size: 18pt;
+	color: white;
+	border: none;
+	padding: 5px 50px;
+	margin-top: 25px;
+
+	&:hover{
+		background: rgba(0,0,0,.8);
+	}
+}
