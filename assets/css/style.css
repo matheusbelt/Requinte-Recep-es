@@ -13,7 +13,10 @@ a {
 
 .header {
   padding-top: 20px;
-  height: 84vh; }
+  height: 84vh;
+  background: url("../img/inicial.jpg");
+  background-size: cover;
+  background-position: 10%; }
 
 .decoracao {
   /*decora├º├úo da imagem do logo*/
@@ -109,7 +112,10 @@ a {
   background: #fffaf0; }
   .catalogos .catalogo-item {
     background: #682829;
-    padding: 30px; }
+    padding: 30px;
+    -webkit-box-shadow: 0px 5px 29px -5px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 5px 29px -5px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 5px 29px -5px rgba(0, 0, 0, 0.68); }
   .catalogos h1 {
     margin-bottom: 40px; }
   .catalogos .catalogo-item-titulo {

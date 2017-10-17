@@ -5,16 +5,24 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/animate.css"><!--  animate -->
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-	<script src="assets/js/jquery-3.1.1.min.js"></script>
+	
+	<script src="assets/js/controller.js"></script>
+	<script src="assets/js/jquery-3.1.1.min.js"></script> <!-- jquery -->
+	<script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script> <!-- wow animation -->
+	<script>
+ 		new WOW().init();
+	</script>
 </head>
 <body>
 	<div class="container-fluid header">
 	<center>
 		<div class="logo">
-			<div class="decoracao"></div><img src="assets/img/logo-superior.png" alt="RR"><div class="decoracao"></div>
+			<div class="decoracao wow animated fadeInLeft" data-wow-delay="1s"></div>
+			<img src="assets/img/logo-superior.png" alt="RR" class="wow animated fadeInDownBig">
+			<div class="decoracao wow animated fadeInRight" data-wow-delay="1s"></div>
 		</div>
 		
 	</center>
@@ -42,9 +50,11 @@
 	<section class="eventos container-fluid" id="eventos">
 		<div class="container">
 			<h1 class="eventos-titulo titulo-section">Eventos</h1>
+
+			<!-- CASAMENTO -->
 			<article class="casamento">
-				<div class="col-md-6 img-left">
-					<img src="" alt="">
+				<div data-wow-delay=".3s" class="col-md-6 img-left wow fadeInLeftBig animated">
+					<img src="" alt="Casamento Requinte" title="Requinte, sempre pensando no seu dia mais feliz">
 				</div>
 				<div class="col-md-6 texto-right casamento">
 					<h2 class="eventos-subtitulo casamento-subtitulo">Casamento</h2>
@@ -61,14 +71,14 @@
 				</div>
 			</article> <!-- fim do casamento (divorcio) -->
 
+			<!-- 15 ANOS -->
 			<article class="15anos">
-				
 				<div class="col-md-6 texto-right 15anos">
 					<h2 class="eventos-subtitulo 15anos-subtitulo">15 anos</h2>
 					<p class="eventos-corpo-texto 15anos-corpo-texto">Texto do 15 anos</p>
 				</div>
-				<div class="col-md-6 img-left">
-					<img src="" alt="">
+				<div class="col-md-6 img-left  wow fadeInRightBig animated">
+					<img data-wow-delay=".3s" src="assets/img/15anos.jpg" alt="Festa de 15 anos requinte" title="Pensando onde fazer sua festa de 15 anos? Acabou de achar o lugar!">
 				</div> <!-- primeiro bloco de informação -->
 				<div class="col-xs-12">
 					<div class="decoracao-laranja"></div>
@@ -79,7 +89,9 @@
 					<div class="decoracao-laranja"></div>
 				</div>
 			</article> <!-- fim do 15anos (envelhecimento) -->
+			
 
+			<!-- FORMATURA -->
 			<article class="formatura">
 				<div class="col-md-6 img-left">
 					<img src="" alt="">
@@ -100,6 +112,8 @@
 		</div> <!-- fim do container -->
 	</section> <!-- fim da section eventos e do container-fluid -->
 
+
+
 	<!-- 30 anos requinte / parte de depoimentos -->
 	<section class="trinta-anos-requinte container-fluid" id="trinta-anos-requinte">
 		<div class="container trinta-anos-corpo">
@@ -112,7 +126,7 @@
 				<h4 class="trinta-anos-cliente-nome">Luquinhas</h4>
 				<p class="trinta-anos-cliente-depoimento">Depoimento do animal que falou aqui</p>
 			</div>
-			<div class="col-md-4 trinta-anos-decoracao">
+			<div class="col-md-4 trinta-anos-decoracao wow fadeIn animated" data-wow-delay="1s">
 				<center>
 				<img src="assets/img/emblema.png" alt="Emblema Requinte 30 anos" title="30 anos da Requinte Recepções">
 			</center>
@@ -124,6 +138,8 @@
 		</div> <!-- fim do trinta-anos corpo -->
 	</section><!--  fim de 30 anos requinte -->
 
+	
+	<!-- CATALOGOS -->
 	<section class="catalogos container-fluid" id="catalogos">
 		<div class="container catalogos-corpo">
 			<h1 class="catalogos-titulo titulo-section">Catálogos</h1>
