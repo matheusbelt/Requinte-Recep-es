@@ -1,0 +1,221 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Palatino;
+  src: url(../fonts/palatino-linotype.ttf); }
+h1 {
+  color: #682829;
+  font-size: 40pt;
+  text-align: center;
+  margin: 100px 0;
+  font-family: Palatino, sans-serif; }
+
+a {
+  color: #000; }
+  a:hover {
+    color: #000; }
+
+.header {
+  padding-top: 20px;
+  height: 100vh;
+  background: url("../img/inicial2.jpg");
+  background-size: cover;
+  background-position: 10%; }
+
+.decoracao {
+  /*decora├º├úo da imagem do logo*/
+  display: inline-block;
+  height: 10px;
+  width: 230px;
+  background-color: #fffaf0;
+  vertical-align: top;
+  margin-top: 70px;
+  margin-right: -30px; }
+
+.menu-background {
+  z-index: 99;
+  top: 83%;
+  position: absolute;
+  width: 100%;
+  background: rgba(238, 232, 218, 0.8);
+  -webkit-box-shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.75); }
+  .menu-background .logo-horizontal img {
+    margin: 10px 0; }
+  .menu-background .navheader {
+    /*menu inicial */ }
+    .menu-background .navheader .menu-inicial {
+      float: right;
+      margin-top: 15px; }
+      .menu-background .navheader .menu-inicial li {
+        float: left;
+        margin: 20px;
+        font-family: "Raleway", sans-serif;
+        font-size: 18pt;
+        padding-bottom: 2px; }
+        .menu-background .navheader .menu-inicial li:hover {
+          border-bottom: 2px solid #682829; }
+      .menu-background .navheader .menu-inicial a:focus, .menu-background .navheader .menu-inicial a:visited, .menu-background .navheader .menu-inicial a:active {
+        color: inherit; }
+
+.eventos {
+  background: #fffaf0; }
+  .eventos img {
+    max-width: 100%; }
+  .eventos .eventos-frase-final {
+    font-style: italic;
+    font-family: "Raleway", sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    margin-top: 20px; }
+    .eventos .eventos-frase-final:before {
+      content: '"'; }
+    .eventos .eventos-frase-final:after {
+      content: '"'; }
+
+.quinzeanos-bloco, .formatura-bloco {
+  margin-top: 100px; }
+
+.eventos-subtitulo, .trinta-anos-requinte .trinta-anos-cliente-nome, .catalogos .catalogo-item-titulo {
+  font-weight: bold;
+  font-family: Palatino, sans-serif;
+  font-size: 26pt; }
+
+.eventos-corpo-texto, .trinta-anos-requinte .trinta-anos-historia, .trinta-anos-requinte .trinta-anos-cliente-depoimento {
+  margin: 10px 0;
+  font-size: 16pt;
+  font-family: "Raleway", sans-serif;
+  line-height: 25px; }
+
+.imagem-decoracao img {
+  margin-top: 60px; }
+
+.decoracao-laranja {
+  display: block;
+  width: 175px;
+  height: 3px;
+  margin: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffe5b6; }
+
+.trinta-anos-requinte {
+  background: #682829;
+  color: white;
+  padding-bottom: 40px; }
+  .trinta-anos-requinte .trinta-anos-titulo {
+    color: white;
+    margin-bottom: 30px; }
+  .trinta-anos-requinte .trinta-anos-historia {
+    padding-left: 15px; }
+  .trinta-anos-requinte .decoracao-laranja {
+    display: block;
+    margin: 40px 0 20px 0;
+    margin-left: auto;
+    margin-right: auto; }
+  .trinta-anos-requinte .trinta-anos-cliente-nome {
+    font-size: 16pt;
+    margin-top: 50px; }
+  .trinta-anos-requinte .trinta-anos-cliente-depoimento {
+    margin-top: 20px; }
+    .trinta-anos-requinte .trinta-anos-cliente-depoimento:before {
+      content: '"'; }
+    .trinta-anos-requinte .trinta-anos-cliente-depoimento:after {
+      content: '"'; }
+
+.catalogos {
+  padding-bottom: 40px;
+  background: url(../img/parallax.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: 50%; }
+  .catalogos .catalogo-item {
+    background: #682829;
+    padding: 30px;
+    -webkit-box-shadow: 0px 5px 29px -5px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 5px 29px -5px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 5px 29px -5px rgba(0, 0, 0, 0.68); }
+    .catalogos .catalogo-item:hover {
+      -moz-box-shadow: inset 0px 5px 29px -5px rgba(0, 0, 0, 0.68);
+      -webkit-box-shadow: inset 0px 5px 29px -5px rgba(0, 0, 0, 0.68);
+      box-shadow: inset 0px 5px 29px -5px rgba(0, 0, 0, 0.68); }
+  .catalogos h1 {
+    margin-bottom: 40px;
+    color: white; }
+  .catalogos .catalogo-item-titulo {
+    color: white;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 5px; }
+
+.catalogo-download {
+  background: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 18pt;
+  color: white;
+  border: none;
+  padding: 5px 50px;
+  margin-top: 25px; }
+  .catalogo-download:hover {
+    background: rgba(0, 0, 0, 0.8); }
+
+footer {
+  background: url(../img/bg-footer.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed; }
+  footer .icon-flex {
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-fow: collum nowrap; }
+  footer .icon {
+    padding: 0;
+    background: white;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    padding: 10px; }
+    footer .icon:hover {
+      transform: scale(1.1, 1.1);
+      transition: .5s;
+      background: #682829; }
+
+.contato-titulo {
+  color: white; }
+
+#map {
+  height: 500px;
+  width: 100%; }
+
+.contato-redes-sociais p {
+  max-width: 70%; }
+.contato-redes-sociais label {
+  display: block; }
+.contato-redes-sociais input, .contato-redes-sociais textarea {
+  background: black;
+  padding: 5px 10px;
+  border: 2px white solid;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: white; }
+  .contato-redes-sociais input:focus, .contato-redes-sociais textarea:focus {
+    outline-color: #682829;
+    border-color: #682829; }
+.contato-redes-sociais #wpcf7-f4-o1 > form > p:nth-child(6) {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+.contato-redes-sociais input[type="submit"], .contato-redes-sociais textarea[type="submit"] {
+  margin-top: 30px;
+  width: 50%; }
+  .contato-redes-sociais input[type="submit"]:hover, .contato-redes-sociais textarea[type="submit"]:hover, .contato-redes-sociais input[type="submit"]:focus, .contato-redes-sociais textarea[type="submit"]:focus, .contato-redes-sociais input[type="submit"]:active, .contato-redes-sociais textarea[type="submit"]:active {
+    border-color: #682829;
+    color: #682829; }
+
+.copyright, .copyright a {
+  margin-top: 40px;
+  color: white;
+  opacity: .9; }
+
+/*# sourceMappingURL=style.css.map */
