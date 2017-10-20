@@ -11,9 +11,10 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	
-	<script src="<?php echo bloginfo('template_directory'); ?>/assets/js/controller.js"></script>
+	
 	<script src="<?php echo bloginfo('template_directory'); ?>/assets/js/jquery-3.1.1.min.js"></script> <!-- jquery -->
 	<script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script> <!-- wow animation -->
+	<script src="<?php echo bloginfo('template_directory'); ?>/assets/js/controller.js"></script>
 	<script>
  		new WOW().init();
 	</script>

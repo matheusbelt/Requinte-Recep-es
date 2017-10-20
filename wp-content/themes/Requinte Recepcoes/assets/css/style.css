@@ -155,7 +155,8 @@ a {
   color: white;
   border: none;
   padding: 5px 50px;
-  margin-top: 25px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
   .catalogo-download:hover {
     background: rgba(0, 0, 0, 0.8); }
 
@@ -167,7 +168,7 @@ footer {
     max-width: 70%;
     display: flex;
     justify-content: space-between;
-    flex-fow: collum nowrap; }
+    cursor: pointer; }
   footer .icon {
     padding: 0;
     background: white;
@@ -217,5 +218,59 @@ footer {
   margin-top: 40px;
   color: white;
   opacity: .9; }
+
+.adress {
+  background: #682829;
+  color: white;
+  position: absolute;
+  padding: 30px 70px 20px 30px;
+  top: -172px;
+  right: 127px;
+  z-index: 99;
+  font-family: "Raleway", sans-serif;
+  border-radius: 5px;
+  cursor: default; }
+  .adress p {
+    margin-bottom: 20px; }
+  .adress__quadrado {
+    height: 50px;
+    width: 50px;
+    background: #682829;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -61px;
+    right: 154px; }
+  .adress--inativo {
+    visibility: hidden; }
+  .adress--ativo {
+    visibility: visible; }
+
+.hamburger-invisivel {
+  visibility: hidden;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  background: none;
+  border: none;
+  font-size: 20pt; }
+  .hamburger-invisivel:focus, .hamburger-invisivel:active {
+    outline-color: #682829; }
+
+@media (max-width: 1000px) {
+  .hamburger-invisivel {
+    visibility: visible; }
+
+  .menu-mobile {
+    margin-top: 100px; }
+
+  .menu-background .navheader .menu-inicial li {
+    float: none;
+    display: block; }
+
+  footer .icon-flex {
+    max-width: 100%; }
+
+  .contato-redes-sociais p {
+    max-width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

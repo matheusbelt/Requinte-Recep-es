@@ -225,6 +225,7 @@ box-shadow: 0px 10px 20px -12px rgba(0,0,0,0.75);
 	border: none;
 	padding: 5px 50px;
 	margin-top: 25px;
+	margin-bottom: 25px;
 
 	&:hover{
 		background: rgba(0,0,0,.8);
@@ -240,7 +241,7 @@ footer{
 		max-width: 70%;
 		display: flex;
 		justify-content: space-between;
-		flex-fow: collum nowrap;
+		cursor: pointer;
 	}
 	.icon{
 		padding: 0;
@@ -308,5 +309,75 @@ footer{
 	opacity: .9;
 	a{
 		@extend .copyright;
+	}
+}
+.adress{
+	background: $vinho;
+	color: white;
+	position: absolute;
+	padding: 30px 70px 20px 30px;
+	top: -172px;
+	right: 127px;
+	z-index: 99;
+	font-family: $corpo-texto;
+	border-radius: 5px;
+	cursor: default;
+
+	p{
+		margin-bottom: 20px;
+	}
+
+	&__quadrado{
+		height: 50px;
+		width: 50px;
+		background: $vinho;
+		transform: rotate(45deg);
+		position: absolute;
+		top: -61px;
+		right: 154px;
+	}
+	&--inativo{
+		visibility: hidden;
+	}
+	&--ativo{
+		visibility: visible;
+	}
+
+}
+
+
+// MEDIA QUERY *****************************************************************************************
+
+
+.hamburger-invisivel{
+	visibility: hidden;
+	position: absolute;
+	right: 20px;
+	top: 40px;
+	background: none;
+	border: none;
+	font-size: 20pt;
+
+	&:focus, &:active{
+		outline-color: $vinho;
+	}
+}
+
+@media (max-width: 1000px){
+	.hamburger-invisivel{
+		visibility: visible;
+	}
+	.menu-mobile{
+		margin-top: 100px;
+	}
+	.menu-background .navheader .menu-inicial li{
+		float: none;
+		display: block;
+	}
+	footer .icon-flex{
+		max-width: 100%;
+	}
+	.contato-redes-sociais p{
+		max-width: 100%;
 	}
 }

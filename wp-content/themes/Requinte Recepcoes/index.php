@@ -12,11 +12,11 @@
 	</div> <!-- final do header e container-fluid -->
 	<div class="container-fluid menu-background">
 		<div class="container menu">
-				<div class="col-md-3">
+				<div class="col-xs-3">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo-horizontal"><img src="<?php echo bloginfo('template_directory'); ?>/assets/img/logo-horizontal.png" alt="Requinte Recepções"></a>
 				</div>
-				<div class="col-md-9">
-					<nav class="navHeader">
+				<div class="col-xs-9 menu-mobile">
+					<nav class="navHeader menu-nav">
 						<ul class="menu-inicial nav nabar-nav">
 							<a href="#eventos"><li>Eventos</li></a>
 							<a href="#trinta-anos-requinte"><li>Depoimentos</li></a>
@@ -25,6 +25,8 @@
 						</ul>
 					</nav><!-- fim da navbar -->
 				</div>
+				<button class="hamburger hamburger-invisivel hide">&#9776;</button>
+  				<button class="cross hamburger-invisivel">&#735;</button>
 		</div>
 	</div><!--  fim do menu-background container-fluid -->
 
