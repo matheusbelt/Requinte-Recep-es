@@ -380,4 +380,21 @@ footer{
 	.contato-redes-sociais p{
 		max-width: 100%;
 	}
+	.adress{
+		top: -160px;
+		right: 0;
+	}
+	.adress__quadrado{
+		top:-60px;
+		right: 21px;
+	}
+}
+
+@media (max-width: 305px){
+	.adress{
+		top: -192px;
+	}
+	.adress__quadrado{
+		top: -60px;
+	}
 }
